@@ -2,16 +2,18 @@ import ilustrationImg from '../assets/images/illustration.svg'
 import logoImg from '../assets/images/logo.svg'
 import googleIcon from '../assets/images/google-icon.svg'
 
+import '../style/auth.css'
+
 export function Home() {
     return(
-        <div>
+        <div id='page-auth'>
             <aside>
                 <img src={ilustrationImg} alt="ilustracao" />
                 <strong>Crie salas de Q&amp;A ao-vivo</strong>
                 <p>Tire as dúvidas da sua audiêcia em tempo real</p>
             </aside>
             <main>
-                <div>
+                <div className="main-content">
                     <img src={logoImg} alt="leteme" />
                     <button>
                         <img src={googleIcon} alt="logo google" />
